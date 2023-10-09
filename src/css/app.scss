@@ -1,0 +1,56 @@
+// app global css in SCSS form
+
+$ing-font-color: #2D3748;
+$ing-layout-header-bg: #fff;
+$ing-layout-header-color: #{$ing-font-color};
+
+/*------------------------------------------------*/
+/*Color palette
+/*------------------------------------------------*/
+:root {
+  --ing-layout-header-bg: #{$ing-layout-header-bg};
+  --ing-header-color: #{$ing-layout-header-color};
+}
+
+
+body {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #{$ing-font-color};
+}
+
+
+/*------------------------------------------------*/
+/*	Main Layout Styling
+/*------------------------------------------------*/
+.ing-layout {
+
+  /*------------------------------------------------*/
+  /*	Header
+  /*------------------------------------------------*/
+  &__header {
+    background-color: var(--ing-header-bg);
+    color: var(--ing-header-color);
+
+    &__toolbar-icon {
+      color: var(--ing-font-color);
+      font-size: 14px;
+
+      &:hover {
+        color: var(--ing-color-primary)
+      }
+    }
+
+    &__user-avatar {
+      color: #ffffff;
+      background-color: var(--ing-color-primary);
+    }
+  }
+
+  &__drawer {
+    background-color: $grey-1;
+
+  }
+
+}
+
